@@ -6,6 +6,7 @@ function App() {
       <ToggleBtn/>
       <hr/>
       <Form/>
+      <hr/>
       </>
 }
 
