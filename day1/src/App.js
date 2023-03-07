@@ -3,7 +3,11 @@ import './App.css'
 import Form from "./Form";
 import Conditionalrendring from "./Conditionalrendering";
 import Formvalidation from "./Formvalidation";
+import Passfunctionvieprops from "./Passfunctionvieprops";
 function App() {
+  function getdata(){
+    return alert("function is called vie props")
+  }
   return <>
       <ToggleBtn/>
       <hr/>
@@ -12,6 +16,8 @@ function App() {
       <Conditionalrendring />
       <hr/>
       <Formvalidation/>
+      <hr/>
+      <Passfunctionvieprops data={getdata}/>
       </>
 }
 
