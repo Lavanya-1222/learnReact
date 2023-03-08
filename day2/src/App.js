@@ -1,7 +1,8 @@
 import './App.css';
-
+import RoutesEx from './RoutesEx';
 function App() {
-return <h1>hello</h1>
+
+return <RoutesEx/>
     
 }
 
