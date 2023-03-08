@@ -5,6 +5,7 @@ import NavigateEx from './useNavigate.js'
 import Contact from './Contact.js'
 import Address from './Address.js'
 import Company from './Company.js'
+import UselocationEx from './useLocation.js'
 function RoutesEx() {
 
     return <BrowserRouter>
@@ -19,6 +20,7 @@ function RoutesEx() {
             <Route path='/user/:name' element={<User />} />
             <Route path='/filter' element={<Filter />} />
             <Route path='/navigate' element={<NavigateEx />} />
+            <Route path='/uselocationex' element={<UselocationEx />} />
 
         </Routes>
     </BrowserRouter>
