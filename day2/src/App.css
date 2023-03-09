@@ -3,3 +3,10 @@ hr{
   background: black;
 
 }
+.link{
+
+  background-color: red;
+}
+.active{
+  color:gold;
+}

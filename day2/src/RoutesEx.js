@@ -6,9 +6,11 @@ import Contact from './Contact.js'
 import Address from './Address.js'
 import Company from './Company.js'
 import UselocationEx from './useLocation.js'
+import LinkNavlink from './Link&Navlink.js'
 function RoutesEx() {
 
-    return <BrowserRouter>
+    return <><BrowserRouter>
+        <LinkNavlink />
         <Routes>
             <Route path='/' element={<h1>hello</h1>} />
             <Route path='/about' element={<h1>About</h1>} />
@@ -24,5 +26,6 @@ function RoutesEx() {
 
         </Routes>
     </BrowserRouter>
+    </>
 }
 export default RoutesEx
