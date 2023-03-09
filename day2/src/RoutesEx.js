@@ -23,6 +23,7 @@ function RoutesEx() {
             <Route path='/filter' element={<Filter />} />
             <Route path='/navigate' element={<NavigateEx />} />
             <Route path='/uselocation' element={<UselocationEx />} />
+            <Route path='/*' element={<h1>Error Page</h1>} />
 
         </Routes>
     </BrowserRouter>
