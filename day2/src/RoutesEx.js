@@ -22,7 +22,7 @@ function RoutesEx() {
             <Route path='/user/:name' element={<User />} />
             <Route path='/filter' element={<Filter />} />
             <Route path='/navigate' element={<NavigateEx />} />
-            <Route path='/uselocationex' element={<UselocationEx />} />
+            <Route path='/uselocation' element={<UselocationEx />} />
 
         </Routes>
     </BrowserRouter>
