@@ -17,7 +17,7 @@ function RoutesEx() {
             <Route path='/contact/' element={<Contact />}>
                 <Route path='address' element={<Address />}/>
                 <Route path='company' element={<Company />} />
-                </Route>
+            </Route>
             
             <Route path='/user/:name' element={<User />} />
             <Route path='/filter' element={<Filter />} />
