@@ -6,20 +6,21 @@ class GetSnapshotBeforeUpdate extends React.Component{
     {
         super();
         this.state={
-            name:"lava"
+            n:"lava"
         }
     }
-    getSnapshotBeforeUpdate(preState){
-       console.log(`before update ${preState.name}`);
+     getSnapshotBeforeUpdate(prevProps,prevState){
+       console.log(`before update ${prevState.n}`);
+     
     }
     onchange(){
-        this.setState({name:"lavanya"})
+        this.setState({n:"lavanya"})
     }
-    componentDidUpdate(){
-        console.log(`after update ${this.state.name}`)
+    componentDidUpdate(prevState,snapshot){
+        console.log(`after update ${this.state.n}`)
     }
     render(){
-        return <><h1>{this.state.name}</h1>
+        return <><h1>{this.state.n}</h1>
         <button onClick={()=>this.onchange()}>change</button></>
     }
 }
