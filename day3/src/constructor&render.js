@@ -4,10 +4,10 @@ class Conred extends React.Component{
 
     constructor(){
         super();
-        console.log("construtor");
+        console.log("construtor Conred");
     }
     render(){
-        return <h1>render call</h1>
+        return console.log("render call Conred------------------")
     }
 }
 export default Conred
