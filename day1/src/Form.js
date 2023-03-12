@@ -20,6 +20,7 @@ function Form() {
             <h2>{formdata.choosecolor}</h2>
             <h2>{formdata.checkbox ? "true" : "false"}</h2>
         </div>)
+        console.log(typeof data)
     }
     function clearHandler() {
         setformdata({ name: "", choosecolor: "Select Option", checkbox: false })
