@@ -3,6 +3,6 @@
 import { Button } from 'react-bootstrap';
 function BootStrap(props)
 {
-return <><Button>change</Button></>
+return <><Button>{props.title}</Button><span> </span></>
 }
 export default BootStrap

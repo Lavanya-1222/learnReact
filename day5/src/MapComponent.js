@@ -4,8 +4,7 @@ function MapComponent(){
 
     let name=["lavanya","viva","kira"]
 
-    return <>
-{name.map((data)=>
+    return <>{name.map((data)=>
 <BootStrap title={data}/>)}
     </>
 }
