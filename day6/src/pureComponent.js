@@ -3,16 +3,16 @@ import React from 'react'
 
 class PureComponentEx extends React.PureComponent{
 
-    constructor(props){
+    constructor(){
         super();
         this.state={
-            count:"lava"
+            count:0
         }
     }
     render(){
         console.log("render calling")
-        return <><h1>{this.props.data}</h1>
-  <button onClick={()=>this.setState({count:"lavanya"})}>change</button>
+        return <><h1>{this.state.count}</h1>
+  <button onClick={()=>this.setState({count:1})}>PureComponentEx</button>
         </>
     }
 }
