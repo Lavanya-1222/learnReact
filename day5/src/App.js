@@ -1,11 +1,11 @@
 
 import Arraymap from "./mapArray";
-import MapComponent from "./mapInReturn";
+import MapInReturn from "./mapInReturn";
 import BootStrap from "./Bootstrap";
 import Mapindex from "./MapIndex";
 import MapNested from "./MapNested";
 import Mapkey from "./MapKey";
-
+import MapComponent from "./MapComponent";
 
 
 function App(){
@@ -13,7 +13,7 @@ function App(){
   return <>
     <Arraymap/>
     <hr></hr>
-  <MapComponent/>
+  <MapInReturn/>
   <hr/>
   <BootStrap/>
   <hr/>
@@ -22,6 +22,9 @@ function App(){
   <MapNested/>
   <hr/>
   <Mapkey/>
+  <hr/>
+  <MapComponent/>
+<hr/>
   </>
 }
 export default App

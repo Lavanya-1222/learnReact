@@ -1,4 +1,4 @@
-function MapComponent(){
+function MapInReturn(){
 
    let num=["100","200","300"];
 
@@ -8,4 +8,4 @@ function MapComponent(){
 {obj.map((data)=><h2>name is "{data.sname}"" age is {data.age}</h2>)}
 </>
 }
-export default MapComponent
+export default MapInReturn

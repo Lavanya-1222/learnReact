@@ -1,8 +1,8 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Button } from 'react-bootstrap';
-function BootStrap()
+function BootStrap(props)
 {
-return <><Button>chnage</Button></>
+return <><Button>change</Button></>
 }
 export default BootStrap
