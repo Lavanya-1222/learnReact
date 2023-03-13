@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 function UseEffectAfterUpdate(){
 
 const [name,setName]=useState("lava");
+
 function onchnage(){
     setName("lavanya")
 }
