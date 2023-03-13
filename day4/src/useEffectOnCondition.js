@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from 'react'
 function UseEffectOnCondition(props){
 
-const [name,setName]=useState("lava");
-const [age,setAge]=useState(10);
-const[address,setAddress]=useState("")
+const [name,setName]=useState("lava");//on state
+const [age,setAge]=useState(10);//no effect
+const[address,setAddress]=useState("")//on props
     useEffect(()=>console.log("useffect on name state "),[name])
     useEffect(()=>console.log("useffect on props "),[address])
 
