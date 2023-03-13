@@ -1,6 +1,6 @@
 
 import Arraymap from "./mapArray";
-import MapComponent from "./mapInComponent";
+import MapComponent from "./mapInReturn";
 import BootStrap from "./Bootstrap";
 import Mapindex from "./MapIndex";
 import MapNested from "./MapNested";
