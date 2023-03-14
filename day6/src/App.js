@@ -5,6 +5,7 @@ import PureComponentEx from "./pureComponent";
 import Child2 from "./SendDataFromChild";
 import UseMemoEx from "./useMemo";
 import UseRef from "./createref";
+import UseRefEx from "./UseRef";
 function  App(){
 
     function parentalert(){
@@ -20,7 +21,8 @@ function  App(){
   <PureComponentEx/><hr/>
   <ParentPureComponent/><hr/>
   <UseMemoEx/><hr/>
-  <UseRef/>
+  <UseRef/><hr/>
+  <UseRefEx/>
  
   </>
 

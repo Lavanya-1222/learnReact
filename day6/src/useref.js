@@ -1,25 +1,12 @@
-import React,{createRef} from "react"
+import { useRef } from "react";
+function UseRefEx(){
 
+    const inputref=useRef();
 
-class UseRef extends React.Component{
-
-    constructor()
-    {
-        super();
-        this.inputred=createRef();
+    function onchange(){
+       inputref.current.style.backgroundColor="red"
     }
-    componentDidMount(){
-        this.inputred.current.style.color='red'
-    }
-getval(){
-    this.inputred.current.style.backgroundColor='black'
-    console.log(this.inputred)
+    return <><input type="text" ref={inputref}></input> 
+    <button onClick={onchange}>change</button></>
 }
-    
-    render(){
-        return<> <input type="text" ref={this.inputred}></input>
-        <button onClick={()=>this.getval()}>CreateRef</button>
-        </>
-    }
-}
-export default UseRef
+export default UseRefEx
