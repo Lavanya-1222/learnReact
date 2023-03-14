@@ -18,7 +18,7 @@ getval(){
     
     render(){
         return<> <input type="text" ref={this.inputred}></input>
-        <button onClick={()=>this.getval()}>Change</button>
+        <button onClick={()=>this.getval()}>CreateRef</button>
         </>
     }
 }
