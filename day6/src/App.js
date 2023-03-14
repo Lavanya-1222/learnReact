@@ -7,6 +7,7 @@ import UseMemoEx from "./useMemo";
 import UseRef from "./createref";
 import UseRefEx from "./UseRef";
 import Forwordref from "./ForwordRef";
+import HOC from "./highordercomponent";
 function  App(){
 
   let inputref=useRef()
@@ -31,6 +32,8 @@ function  App(){
   <UseRefEx/><hr/>
   <Forwordref ref={inputref}/>
  <button onClick={RefEx}>ForwordRef</button>
+ <hr/>
+ <HOC/>
   </>
 
 }
