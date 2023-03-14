@@ -6,6 +6,7 @@ import Mapindex from "./MapIndex";
 import MapNested from "./MapNested";
 import Mapkey from "./MapKey";
 import MapComponent from "./MapComponent";
+import Prestate from "./PreState";
 
 
 function App(){
@@ -25,6 +26,7 @@ function App(){
   <hr/>
   <MapComponent/>
 <hr/>
+<Prestate/>
   </>
 }
 export default App
