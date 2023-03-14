@@ -7,7 +7,6 @@ function UseRefEx(){
     function onchange(){
        inputref.current.style.backgroundColor="red"
     }
-    return <><input type="text" ref={inputref}></input> 
-    <button onClick={onchange}>change</button></>
+    return <><input type="text" ref={inputref}></input><button onClick={onchange}>change</button></>
 }
 export default UseRefEx
