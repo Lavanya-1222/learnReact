@@ -1,6 +1,10 @@
-import Fetch from "./fetch"
+import HomeContainer from "./Containers/HomeContainer"
+// import Fetch from "./fetch"
 
 function App(){
-return <Fetch/>
+return <><HomeContainer/></>
+{/* <Fetch/> */}
+
+
 }
 export default App
