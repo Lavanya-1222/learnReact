@@ -5,10 +5,8 @@
 /.pnp
 .pnp.js
 
-/package-lock.json
-/package.json
+
 /README.md
-manifest.json
 robots.txt
 # testing
 /coverage
