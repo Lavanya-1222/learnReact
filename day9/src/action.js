@@ -4,3 +4,9 @@ export function incrementAction (){
         type:"increment"
     }
 }
+export function decrementAction (){
+
+    return {
+        type:"decrement"
+    }
+}
