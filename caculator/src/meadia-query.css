@@ -1,0 +1,32 @@
+@media screen and (max-width:1024px){
+    .container-cal{
+
+        width:28vw;
+    }
+.input-div{
+   font-size: 1.5rem;
+    
+}
+.output-div{
+    font-size: 1.5rem;
+}
+.btn{
+   width:100%;
+}
+.btn Button{
+    /* padding-inline: calc(var(--padding-inline) - px); */
+    width:80%;
+    font-size: 1rem;
+    margin-inline: 10%;
+ }
+.btn2 Button{
+    padding-inline: var(--padding-inline);
+}
+.btn11 Button{
+    padding-inline: 0;
+}
+.btn16 Button{
+
+    /* padding-inline: 62px; */
+}
+}

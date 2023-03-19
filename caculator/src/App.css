@@ -1,4 +1,193 @@
-.container{
 
-  background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: rgba(255, 255, 255, 0.592)
+}
+
+:root{
+
+  --primary-color:#0e0e10;
+--secondary-color:rgba(34,36,39,0.9);
+--orange-color:#FF9500;
+--padding-inline:20px;
+
+}
+
+.container-cal{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-content: space-between; */
+height:88vh;
+row-gap: 5px;
+width: 23vw;
+border-radius: 40px;
+transform: translateY(7%);
+margin: auto;
+  background-color: var(--primary-color);
+  
+}
+.input-div{
+  width:100%;
+
+ /* height:5%; */
+  font-size: 1.8rem;
+  color:white;
+  text-align: right;
+padding-right: 5px;
+
+
+}
+.output-div{
+  /* border-radius: 40px; */
+  /* background-color: var(--secondary-color); */
+  width:100%;
+  text-align: right;
+  /* height:5%; */
+  font-size: 1.8rem;
+  color:#2EC872;
+  padding-right: 5px;
+}
+.inout{
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+justify-content: space-evenly;
+  row-gap: 5px;
+}
+.btns{
+  display:grid;
+ width:100%;
+  /* column-gap: 5px; */
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: end;
+  margin-inline: auto;
+  row-gap: 1.5%;
+  height: 60%;
+  /* margin-bottom: 22px; */
+  
+  grid-template-areas: "bt1 bt2 bt2 bt3"
+                        "bt4 bt5 bt6 bt7"
+                        "bt8 bt9 bt10 bt11"
+                        "bt12 bt13 bt14 bt15"
+                        "bt16 bt16 bt17 bt18"
+  ;
+
+}
+.btn{
+  width:100%;
+}
+.btn Button{
+  color: white;
+  padding-inline: var(--padding-inline);
+  /* flex-basis:15%; */
+  width:100%;
+  border:0.1px solid #4a4a4e !important;
+  /* justify-self: center; */
+  border-radius: 40%;
+  font-size: 1.5rem;
+  background-color: var(--secondary-color)!important;
+  /* opacity: 0.9; */
+
+}
+.btn Button:hover{
+  box-shadow: 2px 2px 5px gray;
+  /* border:0.2px solid #4a4a4e ; */
+}
+.btn1{
+  grid-area: bt1;
+}
+.btn1 Button{
+  padding-inline: 25px;
+  
+}
+.btn2{
+ 
+   grid-area: bt2;
+}
+.btn2 Button{
+/* flex-basis: 100px; */
+color: rgba(226, 15, 15, 0.866);
+letter-spacing: 0.8px;
+  padding-inline: calc(var(--padding-inline) * 2 );
+  border: 0.1px solid rgba(226, 15, 15, 0.866)!important;
+  border-radius: 20px;
+}
+.btn2 Button:hover{
+  color: rgba(226, 15, 15, 0.866);
+box-shadow: 2px 2px 5px rgba(226, 15, 15, 0.866);
+}
+.btn3 Button,.btn7 Button,.btn11 Button,.btn15 Button{
+  background-color: var(--orange-color)!important;
+}
+.btn3{
+  grid-area: bt3;
+}
+.btn3 Button{
+  /* font-size: 1.2rem; */
+border-radius: var(--padding-inline);
+  padding-inline: 14px;
+ }
+
+.btn4{
+  grid-area: bt4;
+}
+.btn5{
+  grid-area: bt5;
+}
+.btn6{
+  grid-area: bt6;
+}
+.btn7{
+  grid-area: bt7;
+}
+.btn8{
+  grid-area: bt8;
+}
+.btn9{
+  grid-area: bt9;
+}
+.btn10{
+  grid-area: bt10;
+}
+.btn11{
+  grid-area: bt11;
+  
+}
+.btn11 Button{
+  padding-inline: 25px;
+}
+.btn12{
+  grid-area: bt12;
+}
+.btn13{
+  grid-area: bt13;
+}
+.btn14{
+  grid-area: bt14;
+}
+.btn15{
+  grid-area: bt15;
+}
+.btn16 {
+  grid-area: bt16;
+  color:aqua;
+}
+.btn16 Button{
+  padding-inline: 62px;
+  border-radius: 20px;
+}
+.btn17{
+  grid-area: bt17;
+}
+.btn18 Button{
+  background-color: #2EC872!important;
 }
