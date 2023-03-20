@@ -1,0 +1,26 @@
+/* .b/oll1{
+position: absolute;
+top:200px;
+left : 8px;
+
+    width:180px;
+    height:180px;
+    background:linear-gradient(to bottom,#42fa92 ,#2EC872);
+   
+    border-radius: 50%;
+    animation-name: rotatee ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes rotatee {
+    0%{
+transform: translate(0px,0px);
+background-color: aliceblue;
+
+    }
+    100%{
+        /* background-color:red ; */
+        transform: translate(400px,400px);
+    }
+}
