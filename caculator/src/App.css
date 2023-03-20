@@ -5,10 +5,18 @@
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 
 }
 body{
-  background-color: rgba(255, 255, 255, 0.592)
+ 
+  display:flex; 
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100vh;
+
 }
 
 :root{
@@ -21,41 +29,34 @@ body{
 }
 
 .container-cal{
-  display:flex;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* align-content: space-between; */
-height:88vh;
+  align-items: center;
 row-gap: 5px;
-width: 23vw;
+width: 300px;
+height: 550px;
 border-radius: 40px;
-transform: translateY(7%);
-margin: auto;
-  background-color: var(--primary-color);
+background-color: var(--primary-color);
   
 }
 .input-div{
   width:100%;
-
- /* height:5%; */
-  font-size: 1.8rem;
   color:white;
   text-align: right;
 padding-right: 5px;
 
-
 }
 .output-div{
-  /* border-radius: 40px; */
-  /* background-color: var(--secondary-color); */
   width:100%;
   text-align: right;
-  /* height:5%; */
-  font-size: 1.8rem;
   color:#2EC872;
   padding-right: 5px;
 }
 .inout{
+  font-size: 1.8rem;
+  width: 100%;
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -63,17 +64,12 @@ justify-content: space-evenly;
   row-gap: 5px;
 }
 .btns{
-  display:grid;
- width:100%;
-  /* column-gap: 5px; */
-  justify-content: space-evenly;
+  display: grid;
+ width:90%;
+  gap: 10px;
   align-items: center;
-  align-content: end;
-  margin-inline: auto;
-  row-gap: 1.5%;
-  height: 60%;
-  /* margin-bottom: 22px; */
-  
+  justify-items: center;
+  height: 50%;
   grid-template-areas: "bt1 bt2 bt2 bt3"
                         "bt4 bt5 bt6 bt7"
                         "bt8 bt9 bt10 bt11"
@@ -83,59 +79,38 @@ justify-content: space-evenly;
 
 }
 .btn{
-  width:100%;
+  width:90%;
+  font-size: 1.5rem!important;
+border-radius: 30%!important;
+border: 0.1px solid rgb(158, 150, 150)!important;
+padding: 10px ;
+ background-color: var(--secondary-color)!important;
 }
-.btn Button{
-  color: white;
-  padding-inline: var(--padding-inline);
-  /* flex-basis:15%; */
-  width:100%;
-  border:0.1px solid #4a4a4e !important;
-  /* justify-self: center; */
-  border-radius: 40%;
-  font-size: 1.5rem;
-  background-color: var(--secondary-color)!important;
-  /* opacity: 0.9; */
 
+.btn:hover{
+
+box-shadow: 2px 2px 5px rgb(200, 190, 190);
 }
-.btn Button:hover{
-  box-shadow: 2px 2px 5px gray;
-  /* border:0.2px solid #4a4a4e ; */
-}
+
+
 .btn1{
   grid-area: bt1;
 }
-.btn1 Button{
-  padding-inline: 25px;
-  
-}
+
 .btn2{
- 
+  border-radius: 20%!important;
+color:rgb(220, 12, 12)!important;
    grid-area: bt2;
+   border: 0.1px solid rgb(220, 12, 12)!important;
 }
-.btn2 Button{
-/* flex-basis: 100px; */
-color: rgba(226, 15, 15, 0.866);
-letter-spacing: 0.8px;
-  padding-inline: calc(var(--padding-inline) * 2 );
-  border: 0.1px solid rgba(226, 15, 15, 0.866)!important;
-  border-radius: 20px;
-}
-.btn2 Button:hover{
-  color: rgba(226, 15, 15, 0.866);
-box-shadow: 2px 2px 5px rgba(226, 15, 15, 0.866);
-}
-.btn3 Button,.btn7 Button,.btn11 Button,.btn15 Button{
-  background-color: var(--orange-color)!important;
+.btn2:hover{
+  box-shadow: 2px 2px 5px  rgb(220, 12, 12)!important;
 }
 .btn3{
   grid-area: bt3;
+  background-color: var(--orange-color)!important;
 }
-.btn3 Button{
-  /* font-size: 1.2rem; */
-border-radius: var(--padding-inline);
-  padding-inline: 14px;
- }
+
 
 .btn4{
   grid-area: bt4;
@@ -148,6 +123,7 @@ border-radius: var(--padding-inline);
 }
 .btn7{
   grid-area: bt7;
+  background-color: var(--orange-color)!important;
 }
 .btn8{
   grid-area: bt8;
@@ -160,11 +136,9 @@ border-radius: var(--padding-inline);
 }
 .btn11{
   grid-area: bt11;
-  
+  background-color: var(--orange-color)!important;
 }
-.btn11 Button{
-  padding-inline: 25px;
-}
+
 .btn12{
   grid-area: bt12;
 }
@@ -176,18 +150,23 @@ border-radius: var(--padding-inline);
 }
 .btn15{
   grid-area: bt15;
+  background-color: var(--orange-color)!important;
+
 }
 .btn16 {
   grid-area: bt16;
-  color:aqua;
+  border-radius: 20%!important;
 }
-.btn16 Button{
-  padding-inline: 62px;
-  border-radius: 20px;
-}
+
 .btn17{
   grid-area: bt17;
 }
-.btn18 Button{
-  background-color: #2EC872!important;
+.btn18
+{background-color: #2EC872!important;
+  border: 0.1px solid #074b25!important;
+  grid-area: bt18;
+}
+.btn18:hover
+{
+box-shadow: 2px 2px 5px #066b32;
 }
