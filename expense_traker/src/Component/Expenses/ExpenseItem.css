@@ -1,0 +1,27 @@
+
+
+.expense-item{
+    /* margin-top: 37px; */
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     background-color: var(--light-secondary);
+    border-radius: 10px ;
+    }
+.title{
+
+    /* text-align: center; */
+    align-self: center;
+}
+.amount{
+    align-self: center;
+    background-color: var(--dark-primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--dark-secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+
+}

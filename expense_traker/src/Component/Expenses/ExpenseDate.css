@@ -1,0 +1,11 @@
+.date-style{
+display: inline-block;
+    margin-left: 10px;
+margin-block:10px;
+    border: 0.2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: var(--dark-secondary);
+    /* color: white */
+}
