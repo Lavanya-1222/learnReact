@@ -1,17 +1,28 @@
 .container{
 
     /* background-color: gray; */
-
+position: relative;
     margin: auto;
     margin-top: 30px;
     width: 700px;
 }
 .expense-items-container{
-margin-top: 20px;
+margin-top: 10px;
 overflow: auto;
     background-color: var(--dark-secondary);
     padding : 27px;
     border-radius: 10px;
+}
+.filter-div{
+    text-align: right;
+    margin-top: 10px;
+}
+.filter{
+    padding: 8px 20px;
+    background-color: var(--dark-primary);
+    font-weight: bold;
+    border-radius: 10px;
+ 
 }
 
 /* .expense-Container{

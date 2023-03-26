@@ -2,6 +2,7 @@
 
 .expense-item{
     /* margin-top: 37px; */
+    overflow: auto;
     margin-bottom: 27px;
     display: flex;
     flex-direction: row;
@@ -10,9 +11,10 @@
     border-radius: 10px ;
     }
 .title{
-
+font-size: 1.3rem;
     /* text-align: center; */
     align-self: center;
+    text-transform: capitalize;
 }
 .amount{
     align-self: center;

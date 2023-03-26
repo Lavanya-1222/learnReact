@@ -5,6 +5,7 @@ form{
 .div{
     border-radius: 10px;
     background-color: var(--light-primary);
+
 }
 .expense-form{
 padding: 20px 20px;
