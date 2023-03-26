@@ -1,0 +1,32 @@
+
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 390px;
+           margin: auto;
+        margin-top: 8px;
+    }
+    .expense-items-container
+    {
+        padding: 15px 10px;
+    }
+    .expense-item{
+        margin-bottom: 20px;
+    }
+    .expense-form{
+        padding: 10px;
+        justify-content: center;
+    }
+    .add-expense-btn {
+        margin-top: 8px;
+        text-align: center;
+    }
+    .date input{
+        border: 1.5px solid;
+    }
+
+    .add-expense-btn button{
+        margin-left: 50px;
+    }
+}
+

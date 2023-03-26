@@ -8,11 +8,11 @@ form{
 
 }
 .expense-form{
-padding: 20px 20px;
+padding: 20px;
     display: flex;
     flex-wrap: wrap;
 gap:1.5rem;
-/* justify-content: center; */
+justify-content: start;
 
 
 }

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ExpenseFrom from './Component/ExpenseFrom/ExpenseForm'
 import ExpenseItem from './Component/Expenses/ExpenseItem'
 import Expense from './Component/Expenses/Expense';
-
+import './Meadia-Query.css'
 function Container() {
 
 
@@ -19,8 +19,6 @@ function Container() {
 
     }
 
-    console.log(expenselist)
-
 
     return <><div className="container">
         <ExpenseFrom onpassingdataparent={onpassingdataparent} />
@@ -33,18 +31,26 @@ function Container() {
             <option>2018</option>
         </select>
         </div>
-        {(expenselist.length === 0) ? <Expense><h2>No Expense</h2></Expense> :
 
+{(expenselist.length == 0) ? <Expense><h4>No Expense</h4></Expense> :
             (<Expense>{expenselist.map((expense, index) => (
-
+          
                 (expense.date.getFullYear() == year) && (
                     <ExpenseItem key={index} title={expense.title}
-                        amount={expense.amount} date={expense.date} />)))
+                        amount={expense.amount} date={expense.date}/> )
+                        
+              
+                        ) 
+                        )}
+                     </Expense>
+         
+                     )
+        
+
+                }
 
 
-            }
-
-            </Expense>)}
+            
     </div>
     </>
 }

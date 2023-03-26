@@ -21,11 +21,15 @@ function ExpenseFrom(props) {
         }
     }
     function onsubmitHandler(e) {
+
         e.preventDefault();
         setaddHandler(!addHandler)
 
-        props.onpassingdataparent(formdata);
+            props.onpassingdataparent(formdata)
+
+
         setformdata({})
+    
 
     }
     function addexpenseHandler() {
