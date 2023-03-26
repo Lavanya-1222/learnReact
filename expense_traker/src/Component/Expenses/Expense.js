@@ -1,4 +1,3 @@
-// import { getBsProps } from "react-bootstrap/lib/utils/bootstraputils"
 
 function Expense(props){
 

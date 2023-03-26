@@ -4,21 +4,47 @@ import ExpenseFrom from './Component/ExpenseFrom/ExpenseForm'
 import ExpenseItem from './Component/Expenses/ExpenseItem'
 import Expense from './Component/Expenses/Expense';
 
-function Container(){
-const [addHandler,setaddHandler]=useState(true);
-const[formdatacontainer,setformdatacontainer]=useState({})
-function onpassingdataparent(formdata){
-setformdatacontainer(formdata)
-    console.log(formdata)
-}
-    return <><div className="container">
-    <ExpenseFrom onpassingdataparent={onpassingdataparent}/>
+function Container() {
 
-    <Expense>
-    <ExpenseItem title={formdatacontainer.title} amount={formdatacontainer.amount} date={formdatacontainer.date}/>
-    {/* <ExpenseItem/> */}
-    {/* <ExpenseItem/> */}
-    </Expense>
+
+    const [year, setyear] = useState(2023)
+    const [expenselist, setexpenselist] = useState([])
+
+
+    function onpassingdataparent(formdata) {
+
+
+        setexpenselist([...expenselist, formdata])
+
+
+    }
+
+    console.log(expenselist)
+
+
+    return <><div className="container">
+        <ExpenseFrom onpassingdataparent={onpassingdataparent} />
+        <div className='filter-div'><select className='filter' onChange={(e) => setyear(e.target.value)}>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+        </select>
+        </div>
+        {(expenselist.length === 0) ? <Expense><h2>No Expense</h2></Expense> :
+
+            (<Expense>{expenselist.map((expense, index) => (
+
+                (expense.date.getFullYear() == year) && (
+                    <ExpenseItem key={index} title={expense.title}
+                        amount={expense.amount} date={expense.date} />)))
+
+
+            }
+
+            </Expense>)}
     </div>
     </>
 }

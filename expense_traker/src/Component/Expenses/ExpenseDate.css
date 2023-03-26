@@ -5,7 +5,7 @@ margin-block:10px;
     border: 0.2px solid black;
     border-radius: 5px;
     padding: 5px 10px;
-    font-weight: bold;
     background-color: var(--dark-secondary);
-    /* color: white */
+    color: white;
+    font-size : 0.9rem;
 }
